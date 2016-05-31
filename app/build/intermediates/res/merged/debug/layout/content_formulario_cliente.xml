@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".br.unaerp.compras.forms.FormularioClienteActivity"
+    tools:showIn="@layout/activity_formulario_cliente">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/form_cliente_nome"
+        android:hint="Nome"
+        android:singleLine="true"
+        android:layout_margin="5dp"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/form_cliente_sobrenome"
+        android:hint="Sobrenome"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/form_cliente_apelido"
+        android:hint="Apelido"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/form_cliente_telefone"
+        android:hint="Telefone"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/form_cliente_celular"
+        android:hint="Celular"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:maxLength="13"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/form_cliente_endereco"
+        android:hint="Endereço"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/form_cliente_email"
+        android:hint="E-mail"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
