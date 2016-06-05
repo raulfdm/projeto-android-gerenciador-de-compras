@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form class="" action="index.html">
+        <div>
+            <label for="">Nome</label>
+            <input id="nome" type="text" name="name" value="">
+        </div>
+        <div>
+            <label for="">Sobrenome</label>
+            <input id="sobrenome" type="text" name="name" value="">
+        </div>
+        <div>
+            <label for="">Apelido</label>
+            <input id="apelido" type="text" name="name" value="">
+        </div>
+        <div>
+            <label for="">Telefone</label>
+            <input id="telefone" type="text" name="name" value="">
+        </div>
+        <div>
+            <label for="">Celular</label>
+            <input id="celular" type="text" name="name" value="">
+        </div>
+        <div>
+            <label for="">e-mail</label>
+            <input id="email" type="email" name="name" value="">
+        </div>
+        <div>
+            <input type="button" value="Enviar" id="send">
+        </div>
+    </form>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $('#send').on('click', function(event) {
+            event.preventDefault();
+            var cliente = {
+                _id: 1,
+                nome: $('#nome').val(),
+                sobrenome: $('#sobrenome').val(),
+                apelido: $('#apelido').val(),
+                telefone: $('#telefone').val(),
+                celular: $('#celular').val(),
+                email: $('#email').val()
+            }
+
+            var req = new XMLHttpRequest();
+            req.open('POST', 'http://localhost:3000/v1/clientes');                        
+            req.setRequestHeader('Access-Control-Allow-Origin', '*');            
+            req.send(JSON.stringify(cliente));
+        })
+
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log("hu3")
+            };
+            xhttp.open("DELETE", "http://localhost:3000/v1/clientes/2", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
