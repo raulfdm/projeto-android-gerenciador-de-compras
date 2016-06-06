@@ -21,15 +21,9 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="br.unaerp.compras.br.unaerp.compras.atividades.MainActivity"
+            android:name="br.unaerp.compras.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="br.unaerp.compras.br.unaerp.compras.forms.FormularioVendaActivity"
             android:label="@string/title_activity_formulario_venda"
@@ -46,16 +40,17 @@
             android:name="br.unaerp.compras.br.unaerp.compras.atividades.ClientesActivity"
             android:label="@string/title_activity_clientes"
             android:theme="@style/AppTheme" />
-        <activity android:name="br.unaerp.compras.br.unaerp.compras.atividades.LoginActivity" />
+        <activity android:name="br.unaerp.compras.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="br.unaerp.compras.br.unaerp.compras.atividades.AboutActivity"
+            android:name="br.unaerp.compras.AboutActivity"
             android:label="@string/about_titulo"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name="br.unaerp.compras.br.unaerp.compras.atividades.FornecedorActivity"
-            android:label="@string/title_activity_fornecedor"
-            android:theme="@style/AppTheme" />
-        <activity android:name="br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedorActivity" />
     </application>
 
 </manifest>

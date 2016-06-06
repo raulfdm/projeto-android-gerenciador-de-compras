@@ -1,3 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_9d092adf774f24ebeffa4e72adb1fbb6c825f833\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_3bed24f7d5d52213c4cbbc03e44bff3f5724c41c\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_f17f9a8574f17daf968df41653c38fb77776d4da\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7e3edcf771bef9ae328a4098580d8e657052f4ee">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4c2397f51d8b87cc415de5599b2fa9a80a78e324\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2e63d1b64735811d9bec30668c490f2664e51dd7">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_61b727cce7b8fce41eb23a038c9bbfee20af9e91\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_dbc878236ba0b26ebdf9dbc1462fd56b20c12820\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_dff360bdf59422c2196753adf6cb794a9d9332b4\classes.dex" />
+    </item>
+    <item
+        jar="D:\Users\raul\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_015c9ae0921ecf91922123b4cf013b08b424a800\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.github.clans\fab\1.6.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7e6a161b3796c15fe00755ce47e03067e568ecc4">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.clans-fab-1.6.2_156a339087a08eae1a01fc1366a0d85b093549b7\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_d8f3865c360e0df6c5cbc7a855ccb963c3ee1809\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.1.0_3fb54a3578ea6ef53480e9dcc86765b953847962\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_b902aaf63f4f09ee191608233b00f02b9b7f459d\classes.dex" />
+    </item>
+    <item
+        jar="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_87ffc8aabcdeb366658e1d13a9d8bdd137872c49\classes.dex" />
+    </item>
+
+</items>

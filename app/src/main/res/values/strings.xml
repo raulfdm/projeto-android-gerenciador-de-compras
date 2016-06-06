@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gestão de Vendas</string>
+    <string name="title_activity_formulario_cliente">Novo Cliente</string>
+    <string name="title_activity_main">Gestão de Vendas</string>
+    <string name="title_activity_formulario_venda">Nova Venda</string>
+    <string name="title_activity_clientes">Clientes</string>
+
+    <string name="about_info_dev">Developed and Designed By:</string>
+    <string name="about_app_name">Gerenciador de Vendas</string>
+    <string name="about_dev_name">Raul F. de Melo</string>
+    <string name="about_curso_name">Sistemas de Informação</string>
+    <string name="about_cod">Código: 816587</string>
+    <string name="about_app_version">App Version: 1.0.0</string>
+    <string name="about_titulo">Sobre</string>
+
+    <!--<string name=""></string>-->
+
+
+</resources>

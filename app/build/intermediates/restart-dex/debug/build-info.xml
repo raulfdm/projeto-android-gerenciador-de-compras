@@ -4,37 +4,29 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="448202738475844"
-    verifier="FIELD_ADDED" >
+    timestamp="128377707008121" >
 
     <task
         name="javac"
-        duration="179" />
+        duration="1364" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="68" />
+        duration="626" />
     <task
         name="verifier"
-        duration="5" />
+        duration="172" />
 
     <artifact
-        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-        type="DEX" />
+        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="448020506037298" >
+    <build timestamp="128377707008121" >
         <artifact
             location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="448202738475844"
-        verifier="FIELD_ADDED" >
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
