@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="br.unaerp.compras.AboutActivity"
+    tools:context=".br.unaerp.compras.atividades.AboutActivity"
     tools:showIn="@layout/activity_about">
     <LinearLayout
         android:padding="5dp"

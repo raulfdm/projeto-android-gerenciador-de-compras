@@ -2,7 +2,7 @@ package br.unaerp.compras.br.unaerp.compras.helper;
 
 import android.widget.EditText;
 
-import br.unaerp.compras.LoginActivity;
+import br.unaerp.compras.br.unaerp.compras.atividades.LoginActivity;
 import br.unaerp.compras.R;
 import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
 

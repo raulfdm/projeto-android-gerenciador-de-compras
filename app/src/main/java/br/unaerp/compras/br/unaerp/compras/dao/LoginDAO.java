@@ -12,7 +12,7 @@ import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
  */
 public class LoginDAO extends SQLiteOpenHelper {
     public LoginDAO(Context context) {
-        super(context, "GestaoVendas", null, 2);
+        super(context, "GestaoVendas", null, 3);
     }
 
     @Override

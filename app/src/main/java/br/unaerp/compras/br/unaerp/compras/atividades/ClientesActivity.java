@@ -1,6 +1,7 @@
 package br.unaerp.compras.br.unaerp.compras.atividades;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,7 +9,6 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -19,9 +19,11 @@ import com.github.clans.fab.FloatingActionButton;
 import java.util.List;
 
 import br.unaerp.compras.R;
+import br.unaerp.compras.br.unaerp.compras.Encript;
 import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
 import br.unaerp.compras.br.unaerp.compras.forms.FormularioClienteActivity;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
+import br.unaerp.compras.br.unaerp.compras.tasks.EnviaClienteTask;
 
 public class ClientesActivity extends AppCompatActivity {
 
@@ -84,8 +86,8 @@ public class ClientesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> lista, View item, int position, long id) {
                 ClienteModel cliente = (ClienteModel) listaClientes.getItemAtPosition(position);
-                Intent editaCliente = new Intent(ClientesActivity.this,FormularioClienteActivity.class);
-                editaCliente.putExtra("cliente",cliente);
+                Intent editaCliente = new Intent(ClientesActivity.this, FormularioClienteActivity.class);
+                editaCliente.putExtra("cliente", cliente);
                 startActivity(editaCliente);
             }
         });
@@ -95,17 +97,55 @@ public class ClientesActivity extends AppCompatActivity {
     //Criar menu de contexto
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, final ContextMenu.ContextMenuInfo menuInfo) {
-        MenuItem deletar = menu.add("Deletar");
+        /*Instancia o objeto cliente*/
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        final ClienteModel cliente = (ClienteModel) listaClientes.getItemAtPosition(info.position);
 
+        /*LISTA DE MENUS*/
+        MenuItem mandaEmail = menu.add("Enviar e-mail"); //Cria a opção no menu
+        MenuItem enviarSv = menu.add("Enviar para o Servidor");
+        MenuItem deletar = menu.add("Deletar");
+        MenuItem informacao = menu.add("Informações");
+
+
+        /*Envia E-mail através do e-mail cadastrado*/
+        String emailCliente = "mailto:" + cliente.getEmail();
+        Intent intentEmail = new Intent(Intent.ACTION_SENDTO); //ativa a ação de enviar e-mail
+        intentEmail.setType("message/rfc822");
+        intentEmail.putExtra(Intent.EXTRA_EMAIL, emailCliente);
+        intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
+        intentEmail.setData(Uri.parse(emailCliente));
+        mandaEmail.setIntent(intentEmail);
+
+        /*Deletar contato*/
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-                ClienteModel cliente = (ClienteModel) listaClientes.getItemAtPosition(info.position);
                 ClienteDAO dao = new ClienteDAO(ClientesActivity.this);
                 dao.deleteCliente(cliente);
                 dao.close();
                 carregaListaClientes();
+                return false;
+            }
+        });
+
+
+        enviarSv.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                EnviaClienteTask enviaClienteTask = new EnviaClienteTask(ClientesActivity.this, cliente);
+                enviaClienteTask.execute();
+                return Boolean.parseBoolean(null);
+            }
+        });
+
+        informacao.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
+            String nome = "Raul";
+            String resultado = Encript.encripta(nome);
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Toast.makeText(ClientesActivity.this, resultado, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });

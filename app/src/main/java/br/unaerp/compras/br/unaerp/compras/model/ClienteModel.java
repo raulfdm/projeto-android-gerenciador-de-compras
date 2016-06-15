@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Raul on 10/04/2016.
  */
-public class ClienteModel implements Serializable{
+public class ClienteModel implements Serializable {
 
     private Long id;
     private String nome;
@@ -85,10 +85,10 @@ public class ClienteModel implements Serializable{
 
     @Override
     public String toString() {
-        if(getApelido() == null || getApelido().isEmpty()){
-            return getNome()+" "+getSobrenome();
-        }else{
-            return getNome()+" "+getSobrenome()+" "+"("+getApelido()+")";
+        if (getApelido() == null || getApelido().isEmpty()) {
+            return getNome() + " " + getSobrenome();
+        } else {
+            return getNome() + " " + getSobrenome() + " " + "(" + getApelido() + ")";
         }
 
     }

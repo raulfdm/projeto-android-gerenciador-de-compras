@@ -7,30 +7,30 @@
 </head>
 
 <body>
-    <form class="" action="index.html">
+    <form class="" method="POST" action="index.html">
         <div>
             <label for="">Nome</label>
-            <input id="nome" type="text" name="name" value="">
+            <input id="nome" type="text" name="name" value="sSASAHUAS">
         </div>
         <div>
             <label for="">Sobrenome</label>
-            <input id="sobrenome" type="text" name="name" value="">
+            <input id="sobrenome" type="text" name="name" value="sSASAHUAS">
         </div>
         <div>
             <label for="">Apelido</label>
-            <input id="apelido" type="text" name="name" value="">
+            <input id="apelido" type="text" name="name" value="sSASAHUAS">
         </div>
         <div>
             <label for="">Telefone</label>
-            <input id="telefone" type="text" name="name" value="">
+            <input id="telefone" type="text" name="name" value="sSASAHUAS">
         </div>
         <div>
             <label for="">Celular</label>
-            <input id="celular" type="text" name="name" value="">
+            <input id="celular" type="text" name="name" value="sSASAHUAS">
         </div>
         <div>
             <label for="">e-mail</label>
-            <input id="email" type="email" name="name" value="">
+            <input id="email" type="email" name="name" value="sSASAHUAS@gmail.com">
         </div>
         <div>
             <input type="button" value="Enviar" id="send">
@@ -49,15 +49,29 @@
                 celular: $('#celular').val(),
                 email: $('#email').val()
             }
+            let url = 'localhost:2000/v1/clientes';
 
-            var req = new XMLHttpRequest();
-            req.open('POST', 'http://localhost:3000/v1/clientes');                        
-            req.setRequestHeader('Access-Control-Allow-Origin', '*');            
-            req.send(JSON.stringify(cliente));
+            $.ajax({
+                url: url,
+                type: "POST",
+                crossDomain: true,
+                data: cliente,
+                dataType: "json",
+                success: function(result) {
+                    alert(JSON.stringify(result));
+                },
+                error: function(xhr, status, error) {
+                    alert(status);
+                }
+            });
+
         })
 
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
+
+
+
             xhttp.onreadystatechange = function() {
                 console.log("hu3")
             };

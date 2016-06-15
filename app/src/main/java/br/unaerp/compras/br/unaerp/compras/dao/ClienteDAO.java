@@ -17,7 +17,7 @@ import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 public class ClienteDAO extends SQLiteOpenHelper {
 
     public ClienteDAO(Context context) {
-        super(context, "GestaoVendas", null, 2);
+        super(context, "GestaoVendas", null, 3);
     }
 
     @Override
@@ -85,7 +85,7 @@ public class ClienteDAO extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues dados = getContentCliente(cliente);
         String[] params = {cliente.getId().toString()};
-        db.update("clientes",dados,"id = ?",params);
+        db.update("clientes", dados, "id = ?", params);
     }
 
     private ContentValues getContentCliente(ClienteModel cliente) {
