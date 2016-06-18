@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.unaerp.compras.R;
+import br.unaerp.compras.br.unaerp.compras.atividades.MainActivity;
 import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
 import br.unaerp.compras.br.unaerp.compras.helper.FormularioClienteHelper;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
@@ -30,14 +31,18 @@ public class FormularioClienteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_cliente);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         helperCliente = new FormularioClienteHelper(this);
+        /*Formatar Campos*/
         campoTelefone = (EditText) findViewById(R.id.form_cliente_telefone);
         campoTelefone.addTextChangedListener(new PhoneNumberFormattingTextWatcher("BR"));
         campoCelular = (EditText) findViewById(R.id.form_cliente_celular);
         campoCelular.addTextChangedListener(new PhoneNumberFormattingTextWatcher("BR"));
+
+        /*Caso seja Edição*/
         Intent editaCliente = getIntent();
         ClienteModel cliente = (ClienteModel) editaCliente.getSerializableExtra("cliente");
         if (cliente != null) {
@@ -60,7 +65,7 @@ public class FormularioClienteActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.ok_form_cliente:
+            case R.id.form_salvar:
 
                 String formValidado = helperCliente.validaFormulario();
 
@@ -68,7 +73,7 @@ public class FormularioClienteActivity extends AppCompatActivity {
                     Toast.makeText(FormularioClienteActivity.this, "Preencha o campo "+formValidado, Toast.LENGTH_SHORT).show();
                 }else{
                     ClienteModel cliente = helperCliente.getCliente();
-                    ClienteDAO dao = new ClienteDAO(this);
+                    ClienteDAO dao = new ClienteDAO(this, MainActivity.versaoBD);
                     if (cliente.getId() != null) {
                         dao.updateCliente(cliente);
                         Toast.makeText(this, String.valueOf("Cliente " + cliente.getNome() + " Alterado com Sucesso!"), Toast.LENGTH_SHORT).show();

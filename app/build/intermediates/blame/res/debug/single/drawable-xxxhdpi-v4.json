@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_fornecedor.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_fornecedor.png"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png",
@@ -38,10 +38,6 @@
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_3d_rotation_black_18dp.png",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_3d_rotation_black_18dp.png"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
@@ -88,12 +84,12 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_cliente.png",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_cliente.png"
-    },
-    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_home.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_home.png"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_cliente.png",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_cliente.png"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_calendario.png",
@@ -136,6 +132,10 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_produto.png",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_produto.png"
+    },
+    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -160,11 +160,11 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_more_vert_white_24dp.png",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_more_vert_white_24dp.png"
-    },
-    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_sinc.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_sinc.png"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_more_vert_white_24dp.png",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_more_vert_white_24dp.png"
     }
 ]

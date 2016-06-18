@@ -1,19 +1,15 @@
 [
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_drawer.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_main_drawer.xml"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_atividade_clientes.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_atividade_clientes.xml"
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
@@ -48,8 +44,8 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_formulario_venda.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\content_formulario_venda.xml"
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_formulario_fornecedor.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\content_formulario_fornecedor.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
@@ -104,12 +100,12 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_formulario_produto.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\content_formulario_produto.xml"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_atividade_clientes.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\content_atividade_clientes.xml"
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
@@ -138,6 +134,10 @@
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_formulario_produto.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_formulario_produto.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
@@ -188,6 +188,10 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fornecedor.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\fragment_fornecedor.xml"
+    },
+    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_menu.xml"
     },
@@ -200,16 +204,16 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_formulario_fornecedor.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_formulario_fornecedor.xml"
+    },
+    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_subheader.xml"
-    },
-    {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_formulario_venda.xml",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_formulario_venda.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
@@ -222,6 +226,10 @@
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_venda.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\fragment_venda.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
@@ -238,6 +246,14 @@
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_dashboard.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_produto.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\fragment_produto.xml"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main_drawer.xml",

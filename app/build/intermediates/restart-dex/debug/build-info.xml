@@ -4,52 +4,30 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="253310326633894"
+    timestamp="103563098693393"
     token="-341837403628597118" >
 
     <task
         name="javac"
-        duration="646" />
+        duration="684" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="40" />
+        duration="769" />
     <task
         name="verifier"
-        duration="2" />
+        duration="729" />
 
     <artifact
-        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-        type="DEX" />
+        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="251459286889270" >
+    <build timestamp="103563098693393" >
         <artifact
             location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="253133079541386" >
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-            type="DEX" />
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="253310326633894" >
-        <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

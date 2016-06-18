@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".br.unaerp.compras.forms.FormularioFornecedorActivity"
+    tools:showIn="@layout/activity_formulario_fornecedor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/form_fornecedor_nomefantasia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Nome Fantasia"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/form_fornecedor_cnpj"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="CNPJ"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/form_fornecedor_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Endereço"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/form_fornecedor_num"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:hint="Nº"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/form_fornecedor_complemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Complemento"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/form_fornecedor_bairro"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Bairro"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+            <Spinner
+                android:id="@+id/form_fornecedor_estados"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:prompt="@string/country_prompt" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/form_fornecedor_cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Cidade"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/form_fornecedor_telefone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/form_fornecedor_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/form_fornecedor_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Site"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+</ScrollView>

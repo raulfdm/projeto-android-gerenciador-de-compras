@@ -29,22 +29,25 @@ public class ValidaLoginTask extends AsyncTask<Object, Object, String> {
     protected String doInBackground(Object... params) {
         LoginAdapter login = new LoginAdapter();
         String json = login.converteJson(usuario);
+        //String url = "http://10.0.2.2:80/sv/login.php";
+        //String url = "http://:80/sv/login.php";
+        String url = "http://10.0.2.2:8888/sv/login.php";
 
         WebClient rest = new WebClient();
-        String retorno = rest.logarSistema(json);
-        Log.d("CONSOLE.LOG(", retorno.getClass().getName());
-        return retorno;
+        return rest.logarSistema(json,url);
     }
 
     @Override
     protected void onPostExecute(String retorno) {
 
-        if(Boolean.valueOf(retorno)){
+        if(retorno == "true"){
             Intent abreSistema = new Intent(context, MainActivity.class);
             context.startActivity(abreSistema);
             context.finish();
-        }else{
+        }else if (retorno == "false"){
             Toast.makeText(context, "Usuário ou Senha Inválidos", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context, "Falha ao conectar no servidor", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -15,10 +15,6 @@
             android:label="@string/title_activity_formulario_cliente"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".br.unaerp.compras.forms.FormularioVendaActivity"
-            android:label="@string/title_activity_formulario_venda"
-            android:theme="@style/AppTheme" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -28,28 +24,30 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".br.unaerp.compras.atividades.LoginActivity">
-
-            <!--
-            <intent-filter>
+<!--            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+            </intent-filter>-->
         </activity>
         <activity
             android:name=".br.unaerp.compras.atividades.AboutActivity"
             android:label="@string/about_titulo"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".br.unaerp.compras.atividades.MainActivity"
             android:theme="@style/AppTheme">
-            <intent-filter>
+
+                <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".br.unaerp.compras.forms.FormularioFornecedorActivity"
+            android:label="@string/title_activity_formulario_fornecedor"></activity>
+        <activity android:name=".br.unaerp.compras.forms.FormularioProdutoActivity"></activity>
     </application>
 
 </manifest>

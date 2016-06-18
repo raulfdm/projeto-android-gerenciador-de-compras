@@ -19,7 +19,7 @@ public class LoginAdapter {
         try {
             js.object();
             js.key("usuario").value(usuario.getUsuario());
-            js.key("senha").value(enc.encripta(usuario.getSenha()));
+            js.key("senha").value(usuario.getSenha());
             js.endObject();
 
         } catch (JSONException e) {

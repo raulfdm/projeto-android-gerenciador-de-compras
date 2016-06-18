@@ -30,11 +30,6 @@ import br.unaerp.compras.br.unaerp.compras.interfaces.OnFragmentInteractionListe
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 import br.unaerp.compras.br.unaerp.compras.tasks.EnviaClienteTask;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ClienteFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ClienteFragment extends Fragment  {
 
     private ListView listaClientes;
@@ -96,12 +91,12 @@ public class ClienteFragment extends Fragment  {
     public void onResume() {
         carregaListaClientes();
         registerForContextMenu(listaClientes);
-        ((MainActivity) getActivity()).setActionBarTitle(getString(R.string.title_fragment_clientes));
+
         super.onResume();
     }
 
     private void carregaListaClientes() {
-        ClienteDAO dao = new ClienteDAO(this.getActivity());
+        ClienteDAO dao = new ClienteDAO(this.getActivity(),MainActivity.versaoBD);
         List<ClienteModel> clientes = dao.selectCliente();
         listaClientes = (ListView) viewPrincipal.findViewById(R.id.view_cliente_lista);
         ArrayAdapter<ClienteModel> adapter = new ArrayAdapter<ClienteModel>(this.getActivity(), android.R.layout.simple_list_item_1, clientes);
@@ -126,7 +121,7 @@ public class ClienteFragment extends Fragment  {
 
         /*LISTA DE MENUS*/
         MenuItem mandaEmail = menu.add("Enviar e-mail"); //Cria a opção no menu
-        MenuItem enviarSv = menu.add("Enviar para o Servidor");
+
         MenuItem deletar = menu.add("Deletar");
         MenuItem informacao = menu.add("Informações");
 
@@ -144,7 +139,7 @@ public class ClienteFragment extends Fragment  {
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                ClienteDAO dao = new ClienteDAO(ClienteFragment.this.getActivity());
+                ClienteDAO dao = new ClienteDAO(ClienteFragment.this.getActivity(),MainActivity.versaoBD);
                 dao.deleteCliente(cliente);
                 dao.close();
                 carregaListaClientes();
@@ -153,15 +148,6 @@ public class ClienteFragment extends Fragment  {
         });
 
 
-        enviarSv.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-
-                EnviaClienteTask enviaClienteTask = new EnviaClienteTask(ClienteFragment.this.getActivity(), cliente);
-                enviaClienteTask.execute();
-                return Boolean.parseBoolean(null);
-            }
-        });
 
         informacao.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
             String nome = "Raul";

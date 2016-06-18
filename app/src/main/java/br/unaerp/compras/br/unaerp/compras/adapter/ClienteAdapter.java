@@ -12,6 +12,8 @@ public class ClienteAdapter {
     public String converteJson(ClienteModel cliente) {
         JSONStringer js = new JSONStringer();
 
+
+
         try {
             js.object();
             js.key("_id").value(cliente.getId());

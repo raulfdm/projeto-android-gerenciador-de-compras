@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.connection.WebClient;
+import br.unaerp.compras.br.unaerp.compras.adapter.LoginAdapter;
 import br.unaerp.compras.br.unaerp.compras.dao.LoginDAO;
 import br.unaerp.compras.br.unaerp.compras.helper.LoginHelper;
 import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
@@ -39,8 +42,18 @@ public class LoginActivity extends Activity {
                 if(formValidado != null){
                     Toast.makeText(LoginActivity.this, "Por favor, preencha o "+formValidado, Toast.LENGTH_SHORT).show();
                 }else {
-                    ValidaLoginTask task = new ValidaLoginTask(helperLogin.getUsuario(),LoginActivity.this);
-                    task.execute();
+                   /* ValidaLoginTask task = new ValidaLoginTask(helperLogin.getUsuario(),LoginActivity.this);
+                    task.execute();*/
+
+                    LoginDAO dao = new LoginDAO(LoginActivity.this,MainActivity.versaoBD);
+                    LoginModel retorno = dao.validaAcesso(helperLogin.getUsuario());
+                    if(retorno.getNomeCompleto().length()>0){
+                        Intent abreSistema = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(abreSistema);
+                        finish();
+                    }else{
+                        Toast.makeText(LoginActivity.this, "Usuário ou Senha Inválidos", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/ok_form_cliente"
+    <item android:id="@+id/form_salvar"
         android:title="Salvar"
         android:icon="@drawable/ic_done_white_24dp"
         app:showAsAction="always"/>

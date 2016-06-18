@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.unaerp.compras.br.unaerp.compras.atividades.MainActivity;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 
 /**
@@ -16,8 +17,8 @@ import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
  */
 public class ClienteDAO extends SQLiteOpenHelper {
 
-    public ClienteDAO(Context context) {
-        super(context, "GestaoVendas", null, 3);
+    public ClienteDAO(Context context, int version) {
+        super(context, "GestaoVendas", null, version);
     }
 
     @Override
@@ -76,7 +77,6 @@ public class ClienteDAO extends SQLiteOpenHelper {
 
     public void deleteCliente(ClienteModel cliente) {
         SQLiteDatabase db = getWritableDatabase();
-
         String[] params = {cliente.getId().toString()};
         db.delete("clientes", "id = ?", params);
     }
@@ -98,5 +98,10 @@ public class ClienteDAO extends SQLiteOpenHelper {
         dados.put("endereco", cliente.getEndereco());
         dados.put("email", cliente.getEmail());
         return dados;
+    }
+
+    public void startaBD(int versaoBD) {
+        SQLiteDatabase db = getWritableDatabase();
+        this.onUpgrade(db,db.getVersion(),versaoBD);
     }
 }

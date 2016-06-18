@@ -1,16 +1,11 @@
 package br.unaerp.compras.br.unaerp.compras.tasks;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import br.unaerp.compras.br.unaerp.compras.adapter.ClienteAdapter;
-import br.unaerp.compras.br.unaerp.compras.atividades.ClientesActivity;
-import br.unaerp.compras.br.unaerp.compras.atividades.MainActivity;
 import br.unaerp.compras.br.unaerp.compras.connection.WebClient;
-import br.unaerp.compras.br.unaerp.compras.fragment.ClienteFragment;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 
 /**

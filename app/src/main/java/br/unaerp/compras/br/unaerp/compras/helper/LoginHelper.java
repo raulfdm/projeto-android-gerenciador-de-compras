@@ -13,19 +13,19 @@ public class LoginHelper {
 
     private final EditText campoUsuario;
     private final EditText campoSenha;
-    private  LoginModel login;
+    private  LoginModel usuario;
 
     public LoginHelper(LoginActivity activity){
         campoUsuario = (EditText) activity.findViewById(R.id.login_nome);
         campoSenha = (EditText) activity.findViewById(R.id.login_senha);
-        login = new LoginModel();
+        usuario = new LoginModel();
     }
 
     public LoginModel getUsuario(){
-        login.setUsuario(campoUsuario.getText().toString());
-        login.setSenha(campoSenha.getText().toString());
+        usuario.setUsuario(campoUsuario.getText().toString());
+        usuario.setSenha(campoSenha.getText().toString());
 
-        return login;
+        return usuario;
     }
 
     public String validaFormLogin(){

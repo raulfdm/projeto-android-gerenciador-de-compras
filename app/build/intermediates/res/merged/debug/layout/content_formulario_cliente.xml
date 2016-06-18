@@ -8,7 +8,6 @@
     tools:context=".br.unaerp.compras.forms.FormularioClienteActivity"
     tools:showIn="@layout/activity_formulario_cliente">
 <LinearLayout
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -42,7 +41,7 @@
         android:layout_margin="5dp"
         android:singleLine="true"
         android:inputType="phone"
-        android:maxLength="12"
+        android:maxLength="18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText

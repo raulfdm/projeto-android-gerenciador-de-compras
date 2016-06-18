@@ -7,6 +7,7 @@ import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.Scanner;
 
 import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
@@ -41,10 +42,14 @@ public class WebClient {
         return null;
     }
 
-    public String logarSistema(String usuario){
+    public String logarSistema(String usuario, String urlRec){
+        URL url = null;
         try {
-            URL url = new URL("http://10.0.2.2:80/sv/login.php");
+            System.setProperty("http.keepAlive","false");
+            url = new URL(urlRec);
+            //Tenta Fazer a Conexão
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            //con.setConnectTimeout(2000);
             con.setRequestProperty("Content-type","application/json");
             con.setRequestProperty("Accept","text");
 
@@ -57,14 +62,16 @@ public class WebClient {
 
             Scanner input = new Scanner(con.getInputStream());
             String resposta = input.next();
-            //Log.d("RETORNO: ",resposta);
             return resposta;
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            Log.d("CONEXÃO: ", String.valueOf(e));
+            return "Erro ao acessar o servidor";
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.d("CONEXÃO: ", String.valueOf(e));
+            return "Erro ao acessar o servidor";
         }
-        return null;
+
+
 
     };
 }
