@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="420dpi"
+    density="xhdpi"
     format="7"
-    timestamp="279779611454008"
-    token="-341837403628597118" >
+    timestamp="847063721450382"
+    token="-1992518709160909022" >
 
     <task
         name="javac"
-        duration="274" />
+        duration="507" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="39" />
+        duration="106" />
     <task
         name="verifier"
-        duration="4" />
+        duration="9" />
 
     <artifact
-        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        location="C:\Users\raul.melo\Documents\GitHub\Android\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
         type="DEX" />
 
-    <build timestamp="279134683856397" >
+    <build timestamp="845636824104780" >
         <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\raul.melo\Documents\GitHub\Android\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="279653840783799" >
+    <build timestamp="846386262295135" >
         <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            location="C:\Users\raul.melo\Documents\GitHub\Android\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="279779611454008" >
+    <build timestamp="847063721450382" >
         <artifact
-            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            location="C:\Users\raul.melo\Documents\GitHub\Android\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
             type="DEX" />
     </build>
 

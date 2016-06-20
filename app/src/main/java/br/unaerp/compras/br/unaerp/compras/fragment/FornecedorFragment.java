@@ -113,18 +113,42 @@ public class FornecedorFragment extends Fragment {
         final FornecedorModel fornecedor = (FornecedorModel) listaFornecedores.getItemAtPosition(info.position);
 
         /*LISTA DE MENUS*/
-        MenuItem mandaEmail = menu.add("Enviar e-mail");
+        final MenuItem mandaEmail = menu.add("Enviar e-mail");
+        MenuItem acessaSite = menu.add("Acessar site");
         MenuItem deletar = menu.add("Deletar");
 
         /*Envia E-mail através do e-mail cadastrado*/
+        mandaEmail.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if(!(fornecedor.getEmail() == null)){
+                    String emailFornecedor = "mailto:" + fornecedor.getEmail();
+                    Intent intentEmail = new Intent(Intent.ACTION_SENDTO); //ativa a ação de enviar e-mail
+                    intentEmail.setType("message/rfc822");
+                    intentEmail.putExtra(Intent.EXTRA_EMAIL, emailFornecedor);
+                    intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
+                    intentEmail.setData(Uri.parse(emailFornecedor));
+                    mandaEmail.setIntent(intentEmail);
+                }else{
+                    Toast.makeText(FornecedorFragment.this.getActivity(), "Fornecedor "+fornecedor.getNomeFantasia()+" sem email cadastrado", Toast.LENGTH_SHORT).show();
+                }
+                return false;
+            }
+        });
 
-            String emailFornecedor = "mailto:" + fornecedor.getEmail();
-            Intent intentEmail = new Intent(Intent.ACTION_SENDTO); //ativa a ação de enviar e-mail
-            intentEmail.setType("message/rfc822");
-            intentEmail.putExtra(Intent.EXTRA_EMAIL, emailFornecedor);
-            intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
-            intentEmail.setData(Uri.parse(emailFornecedor));
-            mandaEmail.setIntent(intentEmail);
+        acessaSite.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if(!(fornecedor.getSite() == null)){
+                    Intent intentRecuperar = new Intent(Intent.ACTION_VIEW);
+                    intentRecuperar.setData(Uri.parse("http://"+fornecedor.getSite()));
+                    startActivity(intentRecuperar);
+                }else {
+                    Toast.makeText(FornecedorFragment.this.getActivity(), "Fornecedor "+fornecedor.getNomeFantasia()+" sem site cadastrado", Toast.LENGTH_SHORT).show();
+                }
+                return false;
+            }
+        });
 
 
         /*Deletar contato*/

@@ -39,6 +39,9 @@ public class BackupTask extends AsyncTask<Object,Object,String> {
     @Override
     protected void onPostExecute(String resposta) {
         dialog.dismiss();
+        if(resposta == null){
+            resposta = "Erro";
+        }
 //        Log.d("ERRO: ",resposta);
         if(resposta.equals("Sucesso")){
             Toast.makeText(context, "Sincronização concluída", Toast.LENGTH_SHORT).show();
