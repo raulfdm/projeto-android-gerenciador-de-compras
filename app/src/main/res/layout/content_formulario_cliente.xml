@@ -5,7 +5,7 @@
     android:layout_gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".br.unaerp.compras.forms.FormularioClienteActivity"
+    tools:context=".br.unaerp.compras.forms.FormularioCliente"
     tools:showIn="@layout/activity_formulario_cliente">
 <LinearLayout
     android:layout_width="match_parent"

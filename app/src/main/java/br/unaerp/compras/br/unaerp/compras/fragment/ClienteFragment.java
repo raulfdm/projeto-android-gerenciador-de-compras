@@ -1,12 +1,10 @@
 package br.unaerp.compras.br.unaerp.compras.fragment;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -15,20 +13,17 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
 
 import java.util.List;
 
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.Encript;
 import br.unaerp.compras.br.unaerp.compras.atividades.MainActivity;
 import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioClienteActivity;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioCliente;
 import br.unaerp.compras.br.unaerp.compras.interfaces.OnFragmentInteractionListener;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
-import br.unaerp.compras.br.unaerp.compras.tasks.EnviaClienteTask;
 
 public class ClienteFragment extends Fragment  {
 
@@ -57,9 +52,6 @@ public class ClienteFragment extends Fragment  {
                     + " must implement OnFragmentInteractionListener");
         }
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
-        }
     }
 
 
@@ -79,7 +71,7 @@ public class ClienteFragment extends Fragment  {
         adicionaCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ClienteFragment.this.getActivity(), FormularioClienteActivity.class);
+                Intent i = new Intent(ClienteFragment.this.getActivity(), FormularioCliente.class);
                 startActivity(i);
             }
         });
@@ -106,7 +98,7 @@ public class ClienteFragment extends Fragment  {
             @Override
             public void onItemClick(AdapterView<?> lista, View item, int position, long id) {
                 ClienteModel cliente = (ClienteModel) listaClientes.getItemAtPosition(position);
-                Intent editaCliente = new Intent(ClienteFragment.this.getActivity(), FormularioClienteActivity.class);
+                Intent editaCliente = new Intent(ClienteFragment.this.getActivity(), FormularioCliente.class);
                 editaCliente.putExtra("cliente", cliente);
                 startActivity(editaCliente);
             }
@@ -123,8 +115,6 @@ public class ClienteFragment extends Fragment  {
         MenuItem mandaEmail = menu.add("Enviar e-mail"); //Cria a opção no menu
 
         MenuItem deletar = menu.add("Deletar");
-        MenuItem informacao = menu.add("Informações");
-
 
         /*Envia E-mail através do e-mail cadastrado*/
         String emailCliente = "mailto:" + cliente.getEmail();
@@ -147,17 +137,6 @@ public class ClienteFragment extends Fragment  {
             }
         });
 
-
-
-        informacao.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
-            String nome = "Raul";
-            String resultado = Encript.encripta(nome);
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Toast.makeText(ClienteFragment.this.getActivity(), resultado, Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
     }
 
 

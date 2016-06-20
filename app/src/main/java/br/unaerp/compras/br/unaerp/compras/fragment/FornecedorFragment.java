@@ -2,14 +2,18 @@ package br.unaerp.compras.br.unaerp.compras.fragment;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
 
@@ -17,9 +21,11 @@ import java.util.List;
 
 import br.unaerp.compras.R;
 import br.unaerp.compras.br.unaerp.compras.atividades.MainActivity;
+import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
 import br.unaerp.compras.br.unaerp.compras.dao.FornecedorDAO;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedorActivity;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedor;
 import br.unaerp.compras.br.unaerp.compras.interfaces.OnFragmentInteractionListener;
+import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 import br.unaerp.compras.br.unaerp.compras.model.FornecedorModel;
 
 
@@ -66,7 +72,7 @@ public class FornecedorFragment extends Fragment {
         adicionaFornecedor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(FornecedorFragment.this.getActivity(), FormularioFornecedorActivity.class);
+                Intent i = new Intent(FornecedorFragment.this.getActivity(), FormularioFornecedor.class);
                 startActivity(i);
             }
         });
@@ -94,9 +100,42 @@ public class FornecedorFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> lista, View view, int position, long id) {
                 FornecedorModel fornecedor = (FornecedorModel) listaFornecedores.getItemAtPosition(position);
-                Intent editaFornecedor = new Intent(FornecedorFragment.this.getActivity(), FormularioFornecedorActivity.class);
+                Intent editaFornecedor = new Intent(FornecedorFragment.this.getActivity(), FormularioFornecedor.class);
                 editaFornecedor.putExtra("fornecedor", fornecedor);
                 startActivity(editaFornecedor);
+            }
+        });
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        final FornecedorModel fornecedor = (FornecedorModel) listaFornecedores.getItemAtPosition(info.position);
+
+        /*LISTA DE MENUS*/
+        MenuItem mandaEmail = menu.add("Enviar e-mail");
+        MenuItem deletar = menu.add("Deletar");
+
+        /*Envia E-mail através do e-mail cadastrado*/
+
+            String emailFornecedor = "mailto:" + fornecedor.getEmail();
+            Intent intentEmail = new Intent(Intent.ACTION_SENDTO); //ativa a ação de enviar e-mail
+            intentEmail.setType("message/rfc822");
+            intentEmail.putExtra(Intent.EXTRA_EMAIL, emailFornecedor);
+            intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
+            intentEmail.setData(Uri.parse(emailFornecedor));
+            mandaEmail.setIntent(intentEmail);
+
+
+        /*Deletar contato*/
+        deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                FornecedorDAO dao = new FornecedorDAO(FornecedorFragment.this.getActivity(), MainActivity.versaoBD);
+                dao.deleteFornecedor(fornecedor);
+                dao.close();
+                carregaListaFornecedores();
+                return false;
             }
         });
     }

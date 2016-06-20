@@ -7,5 +7,6 @@
     <color name="colorAccent400">#FF9100</color>
 
     <color name="corBranca">#FFF</color>
+    <color name="black">#f9f7f7</color>
 
 </resources>

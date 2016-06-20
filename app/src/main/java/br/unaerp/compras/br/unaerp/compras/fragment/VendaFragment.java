@@ -1,19 +1,16 @@
 package br.unaerp.compras.br.unaerp.compras.fragment;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.github.clans.fab.FloatingActionButton;
 
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedorActivity;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedor;
 import br.unaerp.compras.br.unaerp.compras.interfaces.OnFragmentInteractionListener;
 
 
@@ -60,7 +57,7 @@ public class VendaFragment extends Fragment {
         adicionaFornecedor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(VendaFragment.this.getActivity(), FormularioFornecedorActivity.class);
+                Intent i = new Intent(VendaFragment.this.getActivity(), FormularioFornecedor.class);
                 startActivity(i);
             }
         });

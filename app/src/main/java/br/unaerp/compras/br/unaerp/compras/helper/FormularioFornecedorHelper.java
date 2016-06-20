@@ -5,9 +5,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioClienteActivity;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedorActivity;
-import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioFornecedor;
 import br.unaerp.compras.br.unaerp.compras.model.FornecedorModel;
 
 /**
@@ -30,7 +28,7 @@ public class FormularioFornecedorHelper {
 
     private FornecedorModel fornecedor;
 
-    public FormularioFornecedorHelper(FormularioFornecedorActivity activity) {
+    public FormularioFornecedorHelper(FormularioFornecedor activity) {
         campoNomeFantasia = (EditText) activity.findViewById(R.id.form_fornecedor_nomefantasia);
         campoCnpj = (EditText) activity.findViewById(R.id.form_fornecedor_cnpj);
         campoEndereco = (EditText) activity.findViewById(R.id.form_fornecedor_endereco);

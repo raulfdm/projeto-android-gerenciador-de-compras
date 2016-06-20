@@ -216,6 +216,10 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_formulario_venda.xml",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\src\\main\\res\\layout\\activity_formulario_venda.xml"
+    },
+    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_select_dialog_material.xml"
     },

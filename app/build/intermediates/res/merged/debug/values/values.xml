@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <string-array name="produto_tamanho">
-            <item>PP</item>
-            <item>P</item>
-            <item>M</item>
-            <item>G</item>
-            <item>GG</item>
-            <item>XG</item>
-            <item>XXG</item>
-        </string-array>
+        <item>PP</item>
+        <item>P</item>
+        <item>M</item>
+        <item>G</item>
+        <item>GG</item>
+        <item>XG</item>
+        <item>XXG</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -39,6 +39,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#f9f7f7</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -372,7 +373,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about_app_name">Gerenciador de Vendas</string>
-    <string name="about_app_version">App Version: 1.0.0</string>
+    <string name="about_app_version">App Version: 2.0.0</string>
     <string name="about_cod">Código: 816587</string>
     <string name="about_curso_name">Sistemas de Informação</string>
     <string name="about_dev_name">Raul F. de Melo</string>
@@ -445,6 +446,7 @@
     <string name="tagmanager_preview_dialog_title">Preview</string>
     <string name="title_activity_formulario_cliente">Novo Cliente</string>
     <string name="title_activity_formulario_fornecedor">Novo Fornecedor</string>
+    <string name="title_activity_formulario_produto">Novo Produto</string>
     <string name="title_activity_formulario_venda">Nova Venda</string>
     <string name="title_activity_main">Gestão de Vendas</string>
     <string name="title_fragment_clientes">Clientes</string>

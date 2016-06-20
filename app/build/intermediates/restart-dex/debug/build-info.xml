@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
+    abi="x86"
     api-level="23"
-    density="xhdpi"
+    density="420dpi"
     format="7"
-    timestamp="103563098693393"
+    timestamp="279779611454008"
     token="-341837403628597118" >
 
     <task
         name="javac"
-        duration="684" />
+        duration="274" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="769" />
+        duration="39" />
     <task
         name="verifier"
-        duration="729" />
+        duration="4" />
 
     <artifact
-        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
 
-    <build timestamp="103563098693393" >
+    <build timestamp="279134683856397" >
         <artifact
             location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="279653840783799" >
+        <artifact
+            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="279779611454008" >
+        <artifact
+            location="F:\Versionamento\GitHub\projeto-android-gerenciador-de-compras\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

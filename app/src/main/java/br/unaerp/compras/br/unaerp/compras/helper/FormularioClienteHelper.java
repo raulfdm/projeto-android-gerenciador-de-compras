@@ -3,8 +3,7 @@ package br.unaerp.compras.br.unaerp.compras.helper;
 import android.widget.EditText;
 
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioClienteActivity;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioCliente;
 import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 
 /**
@@ -22,7 +21,7 @@ public class FormularioClienteHelper {
 
     private ClienteModel cliente;
 
-    public FormularioClienteHelper(FormularioClienteActivity activity) {
+    public FormularioClienteHelper(FormularioCliente activity) {
 
         campoNome = (EditText) activity.findViewById(R.id.form_cliente_nome);
         campoSobrenome = (EditText) activity.findViewById(R.id.form_cliente_sobrenome);

@@ -5,8 +5,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import br.unaerp.compras.R;
-import br.unaerp.compras.br.unaerp.compras.atividades.LoginActivity;
-import br.unaerp.compras.br.unaerp.compras.forms.FormularioProdutoActivity;
+import br.unaerp.compras.br.unaerp.compras.forms.FormularioProduto;
 import br.unaerp.compras.br.unaerp.compras.model.ProdutoModel;
 
 /**
@@ -22,7 +21,7 @@ public class ProdutoHelper {
 
     private ProdutoModel produto;
 
-    public ProdutoHelper(FormularioProdutoActivity activity) {
+    public ProdutoHelper(FormularioProduto activity) {
 
         campoFornecedor = (Spinner) activity.findViewById(R.id.form_produto_fornecedor);
         campoCodigo = (EditText) activity.findViewById(R.id.form_produto_cod);
@@ -61,7 +60,7 @@ public class ProdutoHelper {
             return "marca do produto";
         }
 
-        return null;
+        return "sucesso";
     }
 
 

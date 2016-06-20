@@ -10,10 +10,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.util.List;
+
 import br.unaerp.compras.R;
+import br.unaerp.compras.br.unaerp.compras.adapter.ClienteAdapter;
+import br.unaerp.compras.br.unaerp.compras.connection.WebClient;
 import br.unaerp.compras.br.unaerp.compras.dao.ClienteDAO;
 import br.unaerp.compras.br.unaerp.compras.dao.FornecedorDAO;
 import br.unaerp.compras.br.unaerp.compras.dao.LoginDAO;
@@ -25,6 +30,8 @@ import br.unaerp.compras.br.unaerp.compras.fragment.FornecedorFragment;
 import br.unaerp.compras.br.unaerp.compras.fragment.ProdutoFragment;
 import br.unaerp.compras.br.unaerp.compras.fragment.VendaFragment;
 import br.unaerp.compras.br.unaerp.compras.interfaces.OnFragmentInteractionListener;
+import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
+import br.unaerp.compras.br.unaerp.compras.tasks.BackupTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnFragmentInteractionListener {
@@ -50,7 +57,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        carregaBancoDeDados();
+        //carregaBancoDeDados();
         abrirDashboard();
 
     }
@@ -70,7 +77,7 @@ public class MainActivity extends AppCompatActivity
         pdao.startaBD(this.versaoBD);
     }
 
-   @Override
+    @Override
     public void onBackPressed() {
 
         if (duploClick) {
@@ -174,17 +181,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void metodoParaEnviarParaServidor() {
-/*        MenuItem enviarSv = menu.add("Enviar para o Servidor");
-        enviarSv.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-
-                EnviaClienteTask enviaClienteTask = new EnviaClienteTask(ClienteFragment.this.getActivity(), cliente);
-                enviaClienteTask.execute();
-                return Boolean.parseBoolean(null);
-            }
-        });*/
-        Toast.makeText(MainActivity.this, "Enviar para o Servidor! Pendente...", Toast.LENGTH_SHORT).show();
+        new BackupTask(this).execute();
     }
 
 

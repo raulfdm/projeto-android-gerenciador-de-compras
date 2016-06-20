@@ -64,4 +64,9 @@ public class ProdutoModel implements Serializable{
     public void setFornecedor(String fornecedor) {
         this.fornecedor = fornecedor;
     }
+
+    @Override
+    public String toString() {
+        return getDescricao() + " - "+getTamanho();
+    }
 }

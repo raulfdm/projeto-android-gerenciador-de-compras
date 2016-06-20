@@ -9,6 +9,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
 
 import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
 
@@ -18,11 +20,14 @@ import br.unaerp.compras.br.unaerp.compras.model.LoginModel;
 public class WebClient {
 
     public String post(String json) {
+        //String uri = "http://10.0.2.2/sv/adiciona-cliente.php";
+        String uri = "http://192.168.0.2:80/sv/adiciona-cliente.php";
         try {
-            URL url = new URL("http://10.0.2.2:80/sv/adiciona-cliente.php");
+            URL url = new URL(uri);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setConnectTimeout(2000);
             con.setRequestProperty("Content-type","application/json");
-            con.setRequestProperty("Accept","text");
+            con.setRequestProperty("Accept","*/*");
 
             con.setDoOutput(true); //faz o POST
 
@@ -42,36 +47,5 @@ public class WebClient {
         return null;
     }
 
-    public String logarSistema(String usuario, String urlRec){
-        URL url = null;
-        try {
-            System.setProperty("http.keepAlive","false");
-            url = new URL(urlRec);
-            //Tenta Fazer a Conexão
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            //con.setConnectTimeout(2000);
-            con.setRequestProperty("Content-type","application/json");
-            con.setRequestProperty("Accept","text");
 
-            con.setDoOutput(true); //faz o POST
-
-            PrintStream output = new PrintStream(con.getOutputStream());
-            output.println(usuario); //insere no corpo
-
-            con.connect();
-
-            Scanner input = new Scanner(con.getInputStream());
-            String resposta = input.next();
-            return resposta;
-        } catch (MalformedURLException e) {
-            Log.d("CONEXÃO: ", String.valueOf(e));
-            return "Erro ao acessar o servidor";
-        } catch (IOException e) {
-            Log.d("CONEXÃO: ", String.valueOf(e));
-            return "Erro ao acessar o servidor";
-        }
-
-
-
-    };
 }

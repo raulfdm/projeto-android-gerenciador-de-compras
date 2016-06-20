@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.unaerp.compras.br.unaerp.compras.model.ClienteModel;
 import br.unaerp.compras.br.unaerp.compras.model.ProdutoModel;
 
 /**
@@ -49,7 +48,7 @@ public class ProdutoDAO extends SQLiteOpenHelper{
     }
 
     public List<ProdutoModel> selectProdutos() {
-        String sql = "select * from produto order by nome;";
+        String sql = "select * from produto order by codigo;";
         SQLiteDatabase db = getReadableDatabase();
         Cursor c_produto = db.rawQuery(sql, null);
         List<ProdutoModel> produtos = new ArrayList<ProdutoModel>();
@@ -108,4 +107,15 @@ public class ProdutoDAO extends SQLiteOpenHelper{
         return fornecedores;
     }
 
+    public boolean deleteProduto(ProdutoModel produto) {
+       try {
+           SQLiteDatabase db = getWritableDatabase();
+           String[] params = {produto.getId().toString()};
+           db.delete("produto", "id = ?", params);
+           return true;
+       }catch (ClassCastException e){
+           return false;
+       }
+
+    }
 }

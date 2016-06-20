@@ -240,12 +240,12 @@
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\powered_by_google_light.png",
-        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xhdpi-v4\\powered_by_google_light.png"
-    },
-    {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_plusone_small_off_client.png",
         "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.0.2\\res\\drawable-xhdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\powered_by_google_light.png",
+        "source": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xhdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "F:\\Versionamento\\GitHub\\projeto-android-gerenciador-de-compras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",

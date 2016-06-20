@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".br.unaerp.compras.forms.FormularioClienteActivity">
+    tools:context=".br.unaerp.compras.forms.FormularioCliente">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
